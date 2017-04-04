@@ -11,7 +11,7 @@ li{
 }
 
 /*style of the header*/
-header {
+header,footer {
     margin: 2%;
 }
 nav li a {
