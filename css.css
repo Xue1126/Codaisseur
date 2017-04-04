@@ -1,0 +1,62 @@
+/*common style*/
+body {
+    font-family: 'Nunito', sans-serif;
+    font-size: 14px;
+}
+a{
+    text-decoration: none;
+}
+li{
+    list-style: none;
+}
+
+/*style of the header*/
+header {
+    margin: 2%;
+}
+nav li a {
+    color: gold;
+}
+h1{
+    margin: 30px;
+}
+nav li a:hover{
+    color: black;
+}
+
+/*style of the banner*/
+.banner {
+    background-color: #D32F2F ;
+    width: 100%;
+    margin:-5px;
+    text-align: center;
+}
+.banner h3, .banner h4 {
+    color: white;
+}
+
+/*style of the main section*/
+
+.valleys-gallery ul li {
+    width: 27%;
+    background-color: lightgray;
+    display: inline-block;
+    margin: 1%;
+    padding:2%;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 4px;
+}
+
+.valley-button{
+    background-color: red;
+    border-radius: 4px;
+    padding: 6px;
+    color: white;
+}
+.valley-card a:hover {
+    color: black;
+}
