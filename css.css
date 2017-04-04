@@ -44,6 +44,7 @@ nav li a:hover {
 
 .card {
     width: 27%;
+	min-width: 150px;
 	height: 60vmin;
     background-color: lightgray;
     display: inline-block;
@@ -73,3 +74,5 @@ nav li a:hover {
 .valley-card a:hover {
     color: black;
 }
+
+
