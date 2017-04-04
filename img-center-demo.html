@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <style>
+        body {
+            background-color: black;
+        }
+
+        #content {
+            background-color: #D32F2F;
+            width: 400px;
+            padding: 20px 10px;
+            margin: 0 auto;
+        }
+
+        .wrap-img {
+            width: 400px;
+            height: 300px;
+            border: 1px solid green;
+            margin: 0 0 50px 0;
+            text-align: center;
+            vertical-align: middle;
+        }
+
+        .wrap-img img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    </style>
+</head>
+
+<body>
+
+<div id="content">
+
+    <p>There are several ways to fit an image in a div:</p>
+    <ol>
+        <li>You can set the width and height, but it'll be strethed.</li>
+        <li>You can set the width OR the height, but it'll have either space left or be too big.</li>
+        <li>You can do the above, but with <code>overflow: hidden</code>, but it only works if you know whether the image aspect ratio is bigger or smaller than the container one.</li>
+        <li>You can just make it very big and use <code>overflow: hidden</code> - you'll lose a lot of image and it'll be inflexible.</li>
+        <li>You can make it a background image, and set <code>background-size: cover;</code> - works but it'll be a background image</li>
+        <li>You can use <code>object-fit: cover;</code> (<a href="https://stackoverflow.com/questions/11670874/is-there-an-equivalent-to-background-size-cover-and-contain-for-image-elements">info</a>) - the perfect way! but only in modern browser versions</li>
+    </ol>
+
+    <p>This is a demo for that last way.</p>
+
+    <div class="wrap-img">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/6/6c/Herjangsfjorden_%26_Ofotfjorden%2C_wide%2C_2009_09.jpg" title="very wide image" />
+    </div>
+
+    <div class="wrap-img">
+        <img src="http://blogs.djc.com/blogs/SeattleScape/wp-content/uploads/2012/08/chinatwo.jpg" title="very tall image" />
+    </div>
+</div>
+
+</body>
+</html>
